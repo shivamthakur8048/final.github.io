@@ -9,10 +9,20 @@
           margin: 40px;
           width: 300px;
           height: 200px;
-          margin-left: 506px;
-          margin-top: 200px;
+          margin-left: 12px;
+          margin-top: 245px;
+          
         }
-
+        .body{
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          font-family: 'Jost', sans-serif;
+          background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+        }
 
       .modal {
         /* modal container fixed across whole screen */
