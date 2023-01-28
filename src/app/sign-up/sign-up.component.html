@@ -8,8 +8,8 @@
                     <!-- <input type="text" name="txt" placeholder="User name" required="">
                     <input type="email" name="email" placeholder="Email" required="">
                     <input type="password" name="pswd" placeholder="Password" required=""> -->
-                    <button (click)="openModal(modal)" >1</button>
-                    <button (click)="openModal(modal2)">2</button>
+                    <button (click)="openModal(modal)" >Mujhe choose karo</button>
+                    <button (click)="openModal(modal2)">Nahi nahi mujhe</button>
                 <!-- </form> -->
             </div>
     
@@ -18,8 +18,9 @@
                     <label for="chk" aria-hidden="true">Dessert?</label>
                     <!-- <input type="email" name="email" placeholder="Email" required="">
                     <input type="password" name="pswd" placeholder="Password" required=""> -->
-                    <button (click)="openModal(modal3)">1</button>
-                    <button (click)="openModal(modal4)">2</button>
+                    <button (click)="openModal(modal3)">Hey Simmi is it me?</button>
+                    <button (click)="openModal(modal4)">or me?</button>
+                    <button (click)="openModal(modal5)">Will you go out on a date with me?</button>
                     <!-- <button>Login</button> -->
                 <!-- </form> -->
             </div>
@@ -28,18 +29,18 @@
 
 <app-modal #modal [active]="isActive">
   <h1 class="headings">You Chose</h1>
-  <p class="headings">Place 1</p>
+  <p class="headings">Cloves Rooftop Restaurant and cafe</p>
   <button (click)="closeModal(modal)">
-    decided
+    Okay Na!
   </button>
 </app-modal>
 
 
 <app-modal #modal2 [active]="isActive">
   <h1 class="headings">You Chose</h1>
-  <p class="headings">Place 2</p>
+  <p class="headings">Varietea Lounge & Terrace</p>
   <button (click)="closeModal(modal2)">
-    Decided
+    Okay Na!
   </button>
 </app-modal>
 
@@ -56,5 +57,31 @@
     <p class="headings">Ice-Cream at Ice-Cream Library</p>
     <button (click)="closeModal(modal4)">
       Decided
+    </button>
+  </app-modal>
+
+  <app-modal #modal5 [active]="isActive">
+    <h1 class="headings">Right?</h1>
+    <button (click)="openModal(modal6)">
+      Yes
+    </button>
+    <button (click)="openModal(modal7)">
+      No
+    </button>
+  </app-modal>
+
+  <app-modal #modal6 [active]="isActive">
+    <h1 class="headings">Yippieeeeeeeeeeeee</h1>
+    <p class="headings">So Text Me The Answers</p>
+    <button (click)="closeModal(modal6)">
+      Bye Bye!
+    </button>
+  </app-modal>
+
+  <app-modal #modal7 [active]="isActive">
+    <h1 class="headings">You know na im ziddi cutieeeeeee</h1>
+    <p class="headings">Toh hum chal rahe h</p>
+    <button (click)="closeModal(modal7)">
+      Bye Bye!
     </button>
   </app-modal>
