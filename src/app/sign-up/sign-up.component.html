@@ -1,0 +1,60 @@
+<div class="body">
+    <div class="main">  	
+        <input type="checkbox" id="chk" aria-hidden="true">
+    
+            <div class="signup">
+                <!-- <form> -->
+                    <label for="chk" aria-hidden="true">Choose One</label>
+                    <!-- <input type="text" name="txt" placeholder="User name" required="">
+                    <input type="email" name="email" placeholder="Email" required="">
+                    <input type="password" name="pswd" placeholder="Password" required=""> -->
+                    <button (click)="openModal(modal)" >1</button>
+                    <button (click)="openModal(modal2)">2</button>
+                <!-- </form> -->
+            </div>
+    
+            <div class="login">
+                <!-- <form> -->
+                    <label for="chk" aria-hidden="true">Dessert?</label>
+                    <!-- <input type="email" name="email" placeholder="Email" required="">
+                    <input type="password" name="pswd" placeholder="Password" required=""> -->
+                    <button (click)="openModal(modal3)">1</button>
+                    <button (click)="openModal(modal4)">2</button>
+                    <!-- <button>Login</button> -->
+                <!-- </form> -->
+            </div>
+    </div>
+</div>
+
+<app-modal #modal [active]="isActive">
+  <h1 class="headings">You Chose</h1>
+  <p class="headings">Place 1</p>
+  <button (click)="closeModal(modal)">
+    decided
+  </button>
+</app-modal>
+
+
+<app-modal #modal2 [active]="isActive">
+  <h1 class="headings">You Chose</h1>
+  <p class="headings">Place 2</p>
+  <button (click)="closeModal(modal2)">
+    Decided
+  </button>
+</app-modal>
+
+<app-modal #modal3 [active]="isActive">
+    <h1 class="headings">You Chose</h1>
+    <p class="headings">1 Biscoff cheesecake 2 spoons</p>
+    <button (click)="closeModal(modal3)">
+      Decided
+    </button>
+  </app-modal>
+
+  <app-modal #modal4 [active]="isActive">
+    <h1 class="headings">You Chose</h1>
+    <p class="headings">Ice-Cream at Ice-Cream Library</p>
+    <button (click)="closeModal(modal4)">
+      Decided
+    </button>
+  </app-modal>
